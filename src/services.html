@@ -1,1 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Bdcalling Project Three</title>
+
+    <!-- Font Awasome -->
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- CSS Style -->
+    <link href="./output.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <!-- Survices HEADER SECTION -->
+    <header>
+      <!-- Nav section -->
+      <nav class="w-full h-auto bg-[#1818181A] backdrop-blur-[5px] z-50 fixed">
+        <div class="container">
+          <div class="flex flex-row justify-between py-[15px]">
+            <img
+              src="image/logo.svg"
+              class="md:w-[100px] md:h-[52px] w-[50px] h-[26px]"
+              alt=""
+            />
+            <ul class="hidden md:flex flex-row gap-x-8 items-center text-white">
+              <li
+                class="text-[16px] font-[500] leading-[150%] hover text-white hover:text-[#6DA015]"
+              >
+                <a href="./index.html">Home</a>
+              </li>
+              <li
+                class="text-[16px] font-[500] leading-[150%] text-white hover:text-[#6DA015]"
+              >
+                <a href="./services.html">Services</a>
+              </li>
+              <li
+                class="ttext-[16px] font-[500] leading-[150%] text-white hover:text-[#6DA015]"
+              >
+                <a href="./about.html">About Us</a>
+              </li>
+              <li
+                class="text-[16px] font-[500] leading-[150%] text-white hover:text-[#6DA015]"
+              >
+                <a href="#">Rates</a>
+              </li>
+              <li
+                class="text-[16px] font-[500] leading-[150%] text-white hover:text-[#6DA015]"
+              >
+                <a href="#">Cost Calculator</a>
+              </li>
+              <li
+                class="text-[16px] font-[500] leading-[150%] text-white hover:text-[#6DA015]"
+              >
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+            <div class="hidden md:flex flex-row gap-x-3 items-center">
+              <button
+                class="h-auto w-auto py-2.5 px-[26px] text-[#6DA015] bg-transparent border-[1px] ease-in-out duration-500 rounded-full hover:border-solid border-[#6DA015] hover:text-white hover:bg-gradient-to-r from-[#6DA015] to-[#46C0A2] cursor-pointer text-base font-[500]"
+              >
+                Sign Up
+              </button>
+              <button
+                class="h-auto w-auto py-2.5 px-[26px] text-[#6DA015] bg-transparent border-[1px] ease-in-out duration-500 rounded-full hover:border-solid border-[#6DA015] hover:text-white hover:bg-gradient-to-r from-[#6DA015] to-[#46C0A2] cursor-pointer text-base font-[500]"
+              >
+                Sign In
+              </button>
+            </div>
+          </div>
+          <ul
+            class="flex flex-col md:hidden gap-x-8 items-right pb-2 text-white"
+          >
+            <li
+              class="text-[16px] font-[500] leading-[150%] hover text-white hover:text-[#6DA015]"
+            >
+              <a href="#">About</a>
+            </li>
+            <li
+              class="text-[16px] font-[500] leading-[150%] text-white hover:text-[#6DA015]"
+            >
+              <a href="#">Services</a>
+            </li>
+            <li
+              class="ttext-[16px] font-[500] leading-[150%] text-white hover:text-[#6DA015]"
+            >
+              <a href="#">About Us</a>
+            </li>
+            <li
+              class="text-[16px] font-[500] leading-[150%] text-white hover:text-[#6DA015]"
+            >
+              <a href="#">Rates</a>
+            </li>
+            <li
+              class="text-[16px] font-[500] leading-[150%] text-white hover:text-[#6DA015]"
+            >
+              <a href="#">Cost Calculator</a>
+            </li>
+            <li
+              class="text-[16px] font-[500] leading-[150%] text-white hover:text-[#6DA015]"
+            >
+              <a href="#">Benefits</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="pt-20 relative flex items-center justify-center text-white min-h-[70vh]"
+    >
+      <img
+        src="./image/services-hero.png"
+        alt="Shipping service"
+        class="absolute inset-0 w-full max-h-[735px] min-h-[400px] object-cover"
+      />
+      <div class="relative text-center px-4">
+        <h1 class="md:text-[66px] text-3xl font-bold mb-3">Our Services</h1>
+        <p class="max-w-lg mx-auto text-gray-200 md:text-[20px] text-sm">
+          Lorem ipsum dolor sit amet consectetur. Congue lacinia tempor orci
+          tellus sollicitudin morbi. Duis massa sit
+        </p>
+      </div>
+      <img
+        src="./image/Hero_whats-up.png"
+        alt="Hero whats up Image"
+        class="absolute right-2 bottom-0"
+      />
+    </section>
+
+    <!-- Our Shipping  SECTION -->
+    <section class="mt-[150px] mb-[30px]">
+      <div class="container">
+        <!-- Top -->
+        <div class="text-center">
+          <h1
+            class="md:text-[36px] text-3xl font-[700] text-[#333333] leading-[120%]"
+          >
+            Our Shipping Services
+          </h1>
+          <p
+            class="text-[16px] md:text-[20px] font-[300] text-font-primary pt-[18px] leading-[130%]"
+          >
+            Lorem ipsum dolor sit amet consectetur. Congue laciniatempor orci
+            tellus
+            <br class="md:block " />
+            sollicitudin morbi. Duis
+          </p>
+        </div>
+        <!-- Bottom -->
+        <div class="grid grid-cols-1 md:grid-cols-3 pt-[32px] gap-x-[24px]">
+
+          <div
+            class="py-10 px-[21px]  shadow-card border-[#46C0A220] bg-gradient-to-r from-[#6DA0150d] from-100% to-[#46C0A20d] to-100% border-2  text-center rounded-[10px] w-auto h-[404px] flex flex-col  items-center gap-6"
+          >
+          <div class="flex flex-col">
+              <img
+                src="./image/us-shipping.svg"
+                class="w-[60px] h-[60px] mx-auto mt-[10px]"
+                alt=""
+              />
+              <h4
+                class="text-[32px] font-[600] text-font-primary leading-[130%] mt-[16px]"
+              >
+                US Shipping
+              </h4>
+              <h5 class="text-[22px] font-[400] text-font-primary mt-1.5">
+                Ship from door to door in Barbados
+              </h5>
+              <p
+                class="text-[14px] mt-1 font-[300] text-font-primary leading-[150%]"
+              >
+                Lorem ipsum dolor sit amet consectetur. Neque etiam purus praesent pretium consectetur turpis duis ullamcorper scelerisque. Quis hendrerit  
+              </p>
+            </div>
+            <button
+                  class="h-auto w-auto py-[8px] px-[45px]  hover:border-transparent ease-in-out duration-500 hover:border-solid  hover:text-white hover:bg-[#6DA015] cursor-pointer text-base font-[500] text-[16px] rounded-[38px]     text-[#6DA015] bg-transparent border-[1px]  border-[#6DA015]  hover:bg-gradient-to-r from-[#6DA015] to-[#46C0A2] "
+                >
+                  Select
+            </button>
+          </div>
+          <div
+            class="py-10 px-[21px]  shadow-card border-[#46C0A220] bg-gradient-to-r from-[#6DA0150d] from-100% to-[#46C0A20d] to-100% border-2  text-center rounded-[10px] w-auto h-[404px] flex flex-col  items-center gap-6"
+          >
+          <div class="flex flex-col">
+              <img
+                src="./image/local-shipping.png"
+                class="w-[60px] h-[60px] mx-auto mt-[10px]"
+                alt=""
+              />
+              <h4
+                class="text-[32px] font-[600] text-font-primary leading-[130%] mt-[16px]"
+              >
+                Local Shipping
+              </h4>
+              <h5 class="text-[22px] font-[400] text-font-primary mt-1.5">
+                Ship from door to door in Barbados
+              </h5>
+              <p
+                class="text-[14px] mt-1 font-[300] text-font-primary leading-[150%]"
+              >
+                Lorem ipsum dolor sit amet consectetur. Neque etiam purus praesent pretium consectetur turpis duis ullamcorper scelerisque. Quis hendrerit  
+              </p>
+            </div>
+            <button
+                  class="h-auto w-auto py-[8px] px-[45px]  text-[#6DA015] bg-transparent  border-[1px] hover:border-transparent ease-in-out duration-500 hover:border-solid  hover:text-white border-[#6DA015]  hover:bg-gradient-to-r from-[#6DA015] to-[#46C0A2] cursor-pointer text-base font-[500] text-[16px] rounded-[38px]"
+                >
+                  Select
+            </button>
+          </div>
+          <div
+            class="py-10 px-[21px]  shadow-card border-[#46C0A220] bg-gradient-to-r from-[#6DA0150d] from-100% to-[#46C0A20d] to-100% border-2  text-center rounded-[10px] w-auto h-[404px] flex flex-col  items-center gap-6"
+          >
+          <div class="flex flex-col">
+              <img
+                src="./image/regional-shipping.png"
+                class="w-[60px] h-[60px] mx-auto mt-[10px]"
+                alt=""
+              />
+              <h4
+                class="text-[32px] font-[600] text-font-primary leading-[130%] mt-[16px]"
+              >
+                Regional Shipping
+              </h4>
+              <h5 class="text-[22px] font-[400] text-font-primary mt-1.5">
+                Ship from door to door in Barbados
+              </h5>
+              <p
+                class="text-[14px] mt-1 font-[300] text-font-primary leading-[150%]"
+              >
+                Lorem ipsum dolor sit amet consectetur. Neque etiam purus praesent pretium consectetur turpis duis ullamcorper scelerisque. Quis hendrerit  
+              </p>
+            </div>
+            <button
+                  class="h-auto w-auto py-[8px] px-[45px]  text-[#6DA015] bg-transparent  border-[1px] hover:border-transparent ease-in-out duration-500 hover:border-solid border-[#6DA015] hover:text-white hover:bg-gradient-to-r from-[#6DA015] to-[#46C0A2] cursor-pointer text-base font-[500] text-[16px] rounded-[38px]"
+                >
+                  Select
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- How It's Work -->
+     <section class=" bg-[#F9FAFC] py-[70px]">
+      <div class="container ">
+        <!-- Top Section -->
+        <div class="text-center">
+          <h1 class="text-[36px] font-[700] text-[#333333] leading-[150%]">
+            How It Work
+          </h1>
+          <p class="text-[18px] font-[300] text-font-primary py-2 leading-[130%]">
+            Lorem ipsum dolor sit amet consectetur. Congue lacinia
+            <br class="hidden md:block" />
+            tempor orci tellus sollicitudin morbi. Duis
+          </p>
+        </div>
+        <!-- Bottom Section -->
+        <div class="relative pt-8">
+          <div class="flex flex-col gap-7">
+            <div
+              class="w-full flex items-center gap-5 p-5 border-b-[0.5px] border-[#C0C0C0]"
+            >
+              <img src="image/One.png" class="w-[100px] h-[100px]" alt="" />
+              <div class="pb-2">
+                <h4
+                  class="text-[32px] text-second-black hover:text-[#5ba65c] font-bold leading-[150%]"
+                >
+                  Free Sign up
+                </h4>
+                <p
+                  class="text-font-primary font-[300] text-[20px] leading-[130%]"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
+                  pretium <br class="hidden md:block" />
+                  phasellus adipiscing faucibus ut nec vel. Pellentesque ac
+                  faucibus.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-full flex items-center gap-5 p-5 border-b-[0.5px] border-[#C0C0C0]"
+            >
+              <img src="image/Two.png" class="w-[100px] h-[100px]" alt="" />
+              <div class="pb-2">
+                <h4
+                  class="text-[32px] text-second-black hover:text-[#5ba65c] font-bold leading-[150%]"
+                >
+                  Shop online
+                </h4>
+                <p
+                  class="text-font-primary font-[300] text-[20px] leading-[130%]"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
+                  pretium <br class="hidden md:block" />
+                  phasellus adipiscing faucibus ut nec vel. Pellentesque ac
+                  faucibus.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-full flex items-center gap-5 p-5 border-b-[0.5px] border-[#C0C0C0]"
+            >
+              <img src="image/Three.png" class="w-[100px] h-[100px]" alt="" />
+              <div class="pb-2">
+                <h4
+                  class="text-[32px] text-second-black hover:text-[#5ba65c] font-bold leading-[150%]"
+                >
+                  Receive or pick up your packages
+                </h4>
+                <p
+                  class="text-font-primary font-[300] text-[20px] leading-[130%]"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
+                  pretium <br class="hidden md:block" />
+                  phasellus adipiscing faucibus ut nec vel. Pellentesque ac
+                  faucibus.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-full flex items-center gap-5 p-5 border-b-[0.5px] border-[#C0C0C0]"
+            >
+              <img src="image/Four.png" class="w-[100px] h-[100px]" alt="" />
+              <div class="pb-2">
+                <h4
+                  class="text-[32px] text-second-black hover:text-[#5ba65c] font-bold leading-[150%]"
+                >
+                  Tips for you!
+                </h4>
+                <p
+                  class="text-font-primary font-[300] text-[20px] leading-[130%]"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
+                  pretium <br class="hidden md:block" />
+                  phasellus adipiscing faucibus ut nec vel. Pellentesque ac
+                  faucibus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute top-20 right-0">
+            <img src="image/Man-Woman.png" class="" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY SECTION -->
+    <section class=" py-[70px]">
+      <div class="container">
+        <!-- Top section -->
+        <div class="text-center">
+          <h1 class="text-[36px] font-[700] text-[#333333] leading-[150%]">
+            Frequently asked question
+          </h1>
+          <p
+            class="text-[18px] font-[300] text-font-primary py-2 leading-[130%]"
+          >
+            Lorem ipsum dolor sit amet consectetur. Congue lacinia
+            <br class="hidden md:block" />
+            tempor orci tellus sollicitudin morbi. Duis
+          </p>
+        </div>
+        <!-- Bottom section -->
+        <div class="flex flex-row justify-between gap-x-4 pt-[32px]">
+          <div class="flex flex-col gap-y-4 w-[50%]">
+            <details
+              class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                <span class="text-2xl text-font-primary font-[500]"
+                  >Lorem ipsum dolor sit amet consectetur. Quis id vitae
+                  consectetur urna?</span
+                >
+                <span
+                  class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition group-open:text-white"
+                >
+                  <span class="group-open:hidden text-[28px] pb-1 font-medium"
+                    >+</span
+                  >
+                  <span class="hidden group-open:inline text-[28px] pb-1"
+                    >−</span
+                  >
+                </span>
+              </summary>
+              <p
+                class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+              >
+                Orthosphere is an AI-powered health assistant offering <br />
+                personalized care, smart doctor consultations, and lab <br />
+                test insights to support your health decisions.
+              </p>
+            </details>
+            <details
+              class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                <span class="text-2xl text-font-primary font-[500]"
+                  >Lorem ipsum dolor sit amet consectetur. Sit amet pellentesque
+                  id at eget?</span
+                >
+                <span
+                  class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition group-open:text-white"
+                >
+                  <span class="group-open:hidden text-[28px] pb-1 font-medium"
+                    >+</span
+                  >
+                  <span class="hidden group-open:inline text-[28px] pb-1"
+                    >−</span
+                  >
+                </span>
+              </summary>
+              <p
+                class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+              >
+                Orthosphere is an AI-powered health assistant offering <br />
+                personalized care, smart doctor consultations, and lab <br />
+                test insights to support your health decisions.
+              </p>
+            </details>
+            <details
+              class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                <span class="text-2xl text-font-primary font-[500]"
+                  >Lorem ipsum dolor sit amet consectetur. Quis id vitae
+                  consectetur urna?</span
+                >
+                <span
+                  class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition group-open:text-white"
+                >
+                  <span class="group-open:hidden text-[28px] pb-1 font-medium"
+                    >+</span
+                  >
+                  <span class="hidden group-open:inline text-[28px] pb-1"
+                    >−</span
+                  >
+                </span>
+              </summary>
+              <p
+                class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+              >
+                Orthosphere is an AI-powered health assistant offering <br />
+                personalized care, smart doctor consultations, and lab <br />
+                test insights to support your health decisions.
+              </p>
+            </details>
+            <details
+              class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                <span class="text-2xl text-font-primary font-[500]"
+                  >Lorem ipsum dolor sit amet consectetur. Pellentesque
+                  vestibulum?</span
+                >
+                <span
+                  class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition group-open:text-white"
+                >
+                  <span class="group-open:hidden text-[28px] pb-1 font-medium"
+                    >+</span
+                  >
+                  <span class="hidden group-open:inline text-[28px] pb-1"
+                    >−</span
+                  >
+                </span>
+              </summary>
+              <p
+                class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+              >
+                Orthosphere is an AI-powered health assistant offering <br />
+                personalized care, smart doctor consultations, and lab <br />
+                test insights to support your health decisions.
+              </p>
+            </details>
+          </div>
+
+          <div class="w-[50%] flex flex-col gap-y-4">
+            <details
+              class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                <span class="text-2xl text-font-primary font-[500]"
+                  >Lorem ipsum dolor sit amet?</span
+                >
+                <span
+                  class="flex items-center justify-center w-[42px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition group-open:text-white "
+                >
+                  <span class="group-open:hidden text-[28px] pb-1 font-medium "
+                    >+</span
+                  >
+                  <span class="hidden group-open:inline text-[28px] pb-1 "
+                    >−</span
+                  >
+                </span>
+              </summary>
+              <p
+                class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+              >
+                Orthosphere is an AI-powered health assistant offering <br />
+                personalized care, smart doctor consultations, and lab <br />
+                test insights to support your health decisions.
+              </p>
+            </details>
+            <details
+              class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                <span class="text-2xl text-font-primary font-[500]"
+                  >Lorem ipsum dolor sit amet consectetur. Tempus ornare ut
+                  lorem dignissim fringilla?</span
+                >
+                <span
+                  class="flex items-center justify-center w-[70px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition group-open:text-white"
+                >
+                  <span class="group-open:hidden text-[28px] pb-1 font-medium"
+                    >+</span
+                  >
+                  <span class="hidden group-open:inline text-[28px] pb-1"
+                    >−</span
+                  >
+                </span>
+              </summary>
+              <p
+                class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+              >
+                Orthosphere is an AI-powered health assistant offering <br />
+                personalized care, smart doctor consultations, and lab <br />
+                test insights to support your health decisions.
+              </p>
+            </details>
+            <details
+              class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                <span class="text-2xl text-font-primary font-[500]"
+                  >Lorem ipsum dolor sit amet consectetur?</span
+                >
+                <span
+                  class="flex items-center justify-center w-[42px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition group-open:text-white"
+                >
+                  <span class="group-open:hidden text-[28px] pb-1 font-medium"
+                    >+</span
+                  >
+                  <span class="hidden group-open:inline text-[28px] pb-1"
+                    >−</span
+                  >
+                </span>
+              </summary>
+              <p
+                class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+              >
+                Orthosphere is an AI-powered health assistant offering <br />
+                personalized care, smart doctor consultations, and lab <br />
+                test insights to support your health decisions.
+              </p>
+            </details>
+            <details
+              class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                <span class="text-2xl text-font-primary font-[500]"
+                  >Lorem ipsum dolor sit amet consectetur. Pretium tortor in
+                  eros?</span
+                >
+                <span
+                  class="flex items-center justify-center w-[50px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition group-open:text-white"
+                >
+                  <span class="group-open:hidden text-[28px] pb-1 font-medium"
+                    >+</span
+                  >
+                  <span class="hidden group-open:inline text-[28px] pb-1"
+                    >−</span
+                  >
+                </span>
+              </summary>
+              <p
+                class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+              >
+                Orthosphere is an AI-powered health assistant offering <br />
+                personalized care, smart doctor consultations, and lab <br />
+                test insights to support your health decisions.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- HASSLE FREE SECTION -->
+    <section class="w-auto my-[70px] flex items-center justify-center">
+      <div
+        class="container relative h-auto py-30 bg-gradient-to-r from-[#6DA015] to-[#46C0A2] rounded-[20px] flex items-center justify-center overflow-hidden"
+      >
+        <div class="w-[926px] h-[209px] flex flex-col items-center gap-[20px]">
+          <h1 class="text-[45px] text-[#F9F9F9] font-bold">
+            Hassle-Free Shipping, Every Time
+          </h1>
+          <p
+            class="pt-[10px] text-[16px] text-[#FFFFFF] font-[400] leading-[150%]"
+          >
+            Inscreva-se em nossa newsletter e tenha acesso exclusivo a conteúdos
+            educacionais, dicas de <br />
+            aprendizado de idiomas, atualizações sobre novos cursos e promoções
+            especiais.
+          </p>
+          <button
+            class="mt-10 h-auto w-auto py-3 px-[40.5px] text-white bg-[#0B2A77] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#6DA015] hover:text-[#0B2A77] hover:bg-white cursor-pointer text-base font-[590]"
+          >
+            Sign Up For Free
+          </button>
+        </div>
+        <img
+          src="./image/free-shoppong-right.png"
+          alt=""
+          class="absolute top-[-10px] right-[-120px] text-[#c4c4c4] rotate-[-5deg]"
+        />
+
+        <img
+          src="./image/free-shoppong-left.png"
+          alt=""
+          class="absolute left-0 bottom-0"
+        />
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-[#0B2A77] h-auto pt-[70px] pb-6 w-auto">
+      <div class="container">
+        <div class="flex flex-row gap-x-20">
+          <div class="w-1/3 flex flex-col gap-4">
+            <img src="image/logo.svg" class="w-[121px] h-[62px]" alt="" />
+            <p
+              class="text-[16px] text-[#FFFFFF] max-w-[449px] font-light py-[5px] pb-[30px] leading-[150%]"
+            >
+              Lorem ipsum dolor sit amet consectetur. Neque consequat tristique
+              bibendum facilisis odio congue enim. Tempor justo proin faucibus
+              praesent ac. Dui nunc sit aliquam eget adipiscing feugiat turpis.
+              Ut eleifend blandit suspendisse sollicitudin amet dictum mauris.
+            </p>
+          </div>
+          <div class="flex flex-row justify-between w-1/3">
+            <div class="">
+              <h3 class="text-[#6DA015] font-[700] text-[18px]">Support</h3>
+
+              <li
+                class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> FAQ</a>
+              </li>
+              <li
+                class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Return & Exchange</a>
+              </li>
+              <li
+                class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Shipping</a>
+              </li>
+              <li
+                class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Brand</a>
+              </li>
+              <li
+                class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Review</a>
+              </li>
+              <li
+                class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Help</a>
+              </li>
+            </div>
+
+            <div class="">
+              <h3 class="text-[#6DA015] font-[700] text-[18px]">Company</h3>
+
+              <li
+                class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Service</a>
+              </li>
+              <li
+                class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Restricted Items</a>
+              </li>
+              <li
+                class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Terms & Conditions</a>
+              </li>
+              <li
+                class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Privacy Policy</a>
+              </li>
+              <li
+                class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Blog</a>
+              </li>
+              <li
+                class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none"
+              >
+                <a href="#"> Contact Us</a>
+              </li>
+            </div>
+          </div>
+          <div class="w-1/3">
+            <h3 class="text-[#6DA015] font-[700] text-[18px]">
+              Join a Newsletter
+            </h3>
+
+            <div class="h-auto items-center justify-center pt-[10px]">
+              <label
+                for=""
+                class="text-[#FAFAFB] font-[300] text-[16px] leading-[150%]"
+              >
+                Your Email</label
+              >
+              <div
+                class="flex items-center bg-white rounded-full overflow-hidden shadow-lg p-1 mt-[15px] mr-12"
+              >
+                <input
+                  type="text"
+                  placeholder="Your E-mail address"
+                  class="w-[200px] bg-transparent text-white placeholder:text-[18px] placeholder:font-[100] placeholder:text-[#313131] text-lg focus:outline-none pl-3"
+                />
+                <button
+                  class="h-auto w-auto py-2 px-[20px] text-white bg-gradient-to-r from-[#6DA015] to-[#46C0A2] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#6DA015] hover:text-[#6DA015] hover:bg-none cursor-pointer text-base font-[590]"
+                >
+                  Subscrube
+                </button>
+              </div>
+            </div>
+
+            <div class="socail-icon flex flex-row pt-[24px] gap-2">
+              <span
+                class="py-2 px-[11px] w-[40px] h-[40px] bg-gradient-to-r from-[#6DA015] to-[#46C0A2] rounded-full cursor-pointer text-white   text-center hover:border-[1px] hover:text-[#6DA015] hover:bg-none hover:border-solid transition border-[#6DA015]  duration-500 ease-in-out"
+              >
+                <i class="fa-brands fa-facebook-f text-xl pr-1.5 pt-0.5"></i>
+              </span>
+              <span
+                class="py-2 px-[11px] w-[40px] h-[40px] bg-gradient-to-r from-[#6DA015] to-[#46C0A2] rounded-full cursor-pointer text-white    text-center hover:border-[1px] hover:text-[#6DA015] hover:bg-none hover:border-solid transition  duration-500 ease-in-out"
+              >
+                <i class="fa-brands fa-instagram text-xl pr-1.5 pt-0.5"></i>
+              </span>
+              <span
+                class="py-2 px-[11px] w-[40px] h-[40px] bg-gradient-to-r from-[#6DA015] to-[#46C0A2] rounded-full cursor-pointer text-white     text-center hover:border-[1px] hover:text-[#6DA015] hover:bg-none hover:border-solid transition  duration-500 ease-in-out"
+              >
+                <i class="fa-brands fa-twitter text-xl pr-1.5 pt-0.5"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center z-50 h-[64px] mt-[60px]">
+        <h4 class="text-[#FFFFFF] text-[16px] font-[100]">
+          © SWIFT EXPRESS CARGO 2025, All Rights Reserved
+        </h4>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+
 
